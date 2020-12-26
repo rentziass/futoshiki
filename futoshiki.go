@@ -5,6 +5,7 @@
 //
 // Configurable traits:
 // - size of the square
+// TODO:
 // - number of numbers to display
 // - number of greater than signs to display
 
