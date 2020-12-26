@@ -61,7 +61,7 @@ func (f *Futoshiki) Print() {
 	}
 }
 
-func GenerateFutoshiki(size int) *Futoshiki {
+func Generate(size int) *Futoshiki {
 	rand.Seed(time.Now().UnixNano())
 
 	sq := make([][]int, size)
@@ -81,7 +81,7 @@ func GenerateFutoshiki(size int) *Futoshiki {
 
 			if len(numbers) == 0 {
 				sq = make([][]int, 0)
-				return GenerateFutoshiki(size)
+				return Generate(size)
 			}
 
 			number := numbers[rand.Intn(len(numbers))]
